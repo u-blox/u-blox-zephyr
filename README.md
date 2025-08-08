@@ -14,7 +14,7 @@ This repository maintains a downstream branch of the Zephyr RTOS, tailored for u
 
 | Branch Name      | Zephyr Version   | Description                                 |
 |------------------|------------------|---------------------------------------------|
-| v4.1             | v4.1             | Latest development branch                   |
+| [v4.1](https://github.com/u-blox/u-blox-zephyr/tree/v4.1) | v4.1 | Latest development branch |
 
 
 ## References
