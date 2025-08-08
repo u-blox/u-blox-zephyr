@@ -21,6 +21,3 @@ This repository maintains a downstream branch of the Zephyr RTOS, tailored for u
 
 - Zephyr Project: [https://github.com/zephyrproject-rtos/zephyr](https://github.com/zephyrproject-rtos/zephyr)
 - Zephyr Documentation: [https://docs.zephyrproject.org/latest/](https://docs.zephyrproject.org/latest/)
-
----
-# u-blox-zephyr
