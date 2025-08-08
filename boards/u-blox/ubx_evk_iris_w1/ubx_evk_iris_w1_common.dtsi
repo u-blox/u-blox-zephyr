@@ -19,7 +19,8 @@
 		sw1 = &user_button_1;
 		watchdog0 = &wwdt;
 		usart-0 = &flexcomm3;
-		i2c-0 = &flexcomm2;
+		i2c-2 = &flexcomm2;
+		i2s-0 = &flexcomm0;
 		pwm-0 = &sctimer;
 	};
 
@@ -77,11 +78,11 @@
 	pinctrl-names = "default";
 };
 
+
 &flexcomm0 {
-	compatible = "nxp,lpc-usart";
+	compatible = "nxp,lpc-i2s";
 	status = "disabled";
-	current-speed = <115200>;
-	pinctrl-0 = <&pinmux_flexcomm0_usart>;
+	pinctrl-0 = <&pinmux_flexcomm0_i2s>;
 	pinctrl-names = "default";
 };
 
@@ -232,4 +233,11 @@
 	status = "okay";
 	#address-cells = <1>;
 	#size-cells = <0>;
+};
+
+&flexcomm2 {
+	compatible = "nxp,lpc-i2c";
+	pinctrl-0 = <&pinmux_flexcomm2_i2c>;
+	pinctrl-names = "default";
+	status = "disabled";
 };
