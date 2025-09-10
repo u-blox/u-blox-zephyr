@@ -55,6 +55,7 @@
 		};
 	};
 
+	// flexcomm1 for flash
 	pinmux_flexcomm1_spi: pinmux_flexcomm1_spi {
 		group0 {
 			pinmux = <IO_MUX_FC1_SPI_SS0>;
