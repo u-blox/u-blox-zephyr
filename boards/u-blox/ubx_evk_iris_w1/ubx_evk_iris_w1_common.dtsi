@@ -206,6 +206,21 @@ zephyr_udc0: &usb_otg {
 	status = "okay";
 };
 
+&enet_mdio {
+	status = "okay";
+	pinctrl-0 = <&pinmux_mdio>;
+	pinctrl-names = "default";
+
+	phy: phy@2 {
+		compatible = "microchip,ksz8081";
+		reg = <2>;
+		status = "okay";
+		reset-gpios = <&hsgpio1 23 GPIO_ACTIVE_HIGH>;
+		int-gpios = <&hsgpio0 21 GPIO_ACTIVE_HIGH>;
+		microchip,interface-type = "rmii";
+	};
+};
+
 &flexcomm1 {
 	compatible = "nxp,lpc-spi";
 	pinctrl-0 = <&pinmux_flexcomm1_spi>;

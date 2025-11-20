@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: Apache-2.0
 
 if(NOT BOARD_REVISION)
-  set(BOARD_REVISION fidelex CACHE STRING "Board revision")
+  set(BOARD_REVISION fidelix CACHE STRING "Board revision")
 endif()
 
 # Validate revision
-if(NOT BOARD_REVISION STREQUAL "macronix" AND NOT BOARD_REVISION STREQUAL "fidelex")
+if(NOT BOARD_REVISION STREQUAL "macronix" AND NOT BOARD_REVISION STREQUAL "fidelix")
   message(FATAL_ERROR
     "Invalid BOARD_REVISION: ${BOARD_REVISION}\n"
-    "Must be one of: macronix, fidelex"
+    "Must be one of: macronix, fidelix"
   )
 endif()
