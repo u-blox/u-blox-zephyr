@@ -38,7 +38,7 @@ const fc_flexspi_nor_config_t flexspi_config = {
 			[1] = FC_FLEXSPI_LUT_SEQ(
 				FC_DUMMY_SDR,
 				FC_FLEXSPI_4PAD, 0x0A,
-				FC_DUMMY_SDR,
+				FC_READ_SDR,
 				FC_FLEXSPI_4PAD, 0x04),
 
 			/* Read Status */
