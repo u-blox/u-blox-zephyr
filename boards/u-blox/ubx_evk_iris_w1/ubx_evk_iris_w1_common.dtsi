@@ -198,12 +198,21 @@
 	wakeup-source;
 };
 
+zephyr_udc0: &usb_otg {
+	status = "okay";
+};
+
 &xtal32 {
 	status = "disabled";
 };
 
-zephyr_udc0: &usb_otg {
+&enet_mac {
 	status = "okay";
+	pinctrl-0 = <&pinmux_enet>;
+	pinctrl-names = "default";
+	phy-handle = <&phy>;
+	zephyr,random-mac-address;
+	phy-connection-type = "rmii";
 };
 
 &enet_mdio {
