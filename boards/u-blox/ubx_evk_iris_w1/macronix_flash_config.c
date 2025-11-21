@@ -36,7 +36,7 @@ const fc_flexspi_nor_config_t flexspi_config = {
 				0xEB, FC_RADDR_SDR,
 				FC_FLEXSPI_4PAD, 0x18),
 			[1] = FC_FLEXSPI_LUT_SEQ(
-				FC_MODE8_SDR,
+				FC_DUMMY_SDR,
 				FC_FLEXSPI_4PAD, 0x0A,
 				FC_DUMMY_SDR,
 				FC_FLEXSPI_4PAD, 0x04),
@@ -86,7 +86,7 @@ const fc_flexspi_nor_config_t flexspi_config = {
 				FC_CMD_SDR,
 				FC_FLEXSPI_1PAD,
 				0x38, FC_RADDR_SDR,
-				FC_FLEXSPI_1PAD,
+				FC_FLEXSPI_4PAD,
 				0x18),
 			[4 * 9 + 1] = FC_FLEXSPI_LUT_SEQ(
 				FC_WRITE_SDR,
